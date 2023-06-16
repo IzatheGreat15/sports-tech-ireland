@@ -7,15 +7,6 @@ root.classList.add('js')
 // import ids from 'virtual:svg-icons-names'
 // console.log(ids)
 
-// Reduce motion
-import detectReducedMotion from './helpers/reduce-motion'
-detectReducedMotion()
-
-// Lazyload images / video
-import './modules/lazyload'
-
-// Enable Vue3 SFC custom elements
-import './vue/vue-dynamic'
 
 // Scroll top button
 import scrollTop from './modules/scroll-top'

@@ -4,7 +4,6 @@ import vue from '@vitejs/plugin-vue'
 import { default as handlebarsPlugin }  from 'vite-plugin-handlebars'
 import handlebars from 'handlebars'
 import layouts from 'handlebars-layouts'
-import { svgBuilder } from './src/build/svgsprite'
 
 const paths = {
 	views: {
@@ -43,14 +42,6 @@ export default {
         },
     },
     plugins: [
-		svgBuilder({
-			path:'./src/assets/img/svg-sprite/',
-			prefix: 'icon',
-			output: './src/assets/img/',
-			filename: 'svg-sprite',
-			writeFile: true,
-			position: 'end'
-		}),
 		handlebarsOverride({
             partialDirectory: [
 				path.resolve(__dirname, 'src/components'),
