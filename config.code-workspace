@@ -29,6 +29,8 @@
       "**/.eslintrc.cjs": true,
       "**/.editorconfig": true,
       "**/.prettierignore": true,
+      "**/tailwind.config.js": true,
+      "**/netlify.toml": true,
 
     },
   }
