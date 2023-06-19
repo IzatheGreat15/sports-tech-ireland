@@ -10,6 +10,24 @@
 		@apply w-full px-4 mx-auto max-w-7xl;
 	}
 
+	/* Hide scrollbar for Chrome, Safari, and Opera */
+    .overflow-x-auto::-webkit-scrollbar {
+		display: none;
+	  }
+  
+	  /* Hide scrollbar for IE and Edge */
+	  .overflow-x-auto {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	  }
+  
+	  /* Enable scroll by click and drag */
+	  .overflow-x-auto {
+		-webkit-overflow-scrolling: touch;
+		overflow-scrolling: touch;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+	  }
+
 }
 
 
